@@ -1,0 +1,41 @@
+#define frmMain 1000
+#define IDC_STC1 1001
+#define lstLog 1002
+#define IDR_VERSION1 1
+#define icoMain 100
+
+frmMain DIALOGEX 6,5,120,90
+CAPTION "AntiHeXie GUI"
+FONT 9,"Arial",400,0,0
+STYLE 0x10CE0880
+EXSTYLE 0x00000001
+BEGIN
+  CONTROL "拖入需处理的文件即可(支持批量).\n---DuckSoft (QQ:1094626398)",IDC_STC1,"Static",0x50000000,3,3,114,18
+  CONTROL "",lstLog,"ListBox",0x50210141,3,24,114,63,0x00020000
+END
+
+IDR_VERSION1 VERSIONINFO
+FILEVERSION 1,0,0,32
+PRODUCTVERSION 1,0,0,32
+FILEOS 0x00000004
+FILETYPE 0x00000000
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "08040000"
+    BEGIN
+      VALUE "FileVersion", "1.0.0.32\0"
+      VALUE "ProductVersion", "1.0.0.32\0"
+      VALUE "CompanyName", "DuckSoft Software Workshop\0"
+      VALUE "FileDescription", "AntiHeXie GUI\0"
+      VALUE "InternalName", "AntiHX-G\0"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x0804, 0x0000
+  END
+END
+
+icoMain ICON DISCARDABLE "DRAG2PG.ICO"
+

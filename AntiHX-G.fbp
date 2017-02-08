@@ -1,0 +1,22 @@
+[Project]
+Version=3
+Api=fb (FreeBASIC),win (Windows)
+Description=AntiHeXie GUI
+[Make]
+Recompile=0
+Module=Module Build,fbc -c
+Current=1
+1=Windows GUI,fbc -s gui
+2=Windows GUI (Debug),fbc -s gui -g
+[TabOrder]
+TabOrder=1
+[File]
+1=AntiHX-G.Bas
+2=
+3=AntiHX-G.Rc
+[FileInfo]
+2=0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1=0,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+3=0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+[BreakPoint]
+1=
